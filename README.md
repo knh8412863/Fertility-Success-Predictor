@@ -15,7 +15,6 @@
 대회 규칙상 test 데이터가 모델 학습, 인코딩, 결측치 처리, feature selection 등에 활용되면 데이터 누수로 간주됩니다. 따라서 전처리와 모델링 전 과정에서 train 기준 처리와 fold 기준 검증을 적용했습니다.
 
 ---
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 ## 🗂️ 프로젝트 구조
@@ -87,7 +86,7 @@ pip install -r requirements.txt
 
 `03_modeling_final.ipynb`는 기본값 기준으로 모델별 OOF/test prediction을 재학습하도록 구성되어 있어 실행 시간이 오래 걸릴 수 있습니다.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
 
 ## 📍 데이터 탐색 EDA
@@ -180,7 +179,7 @@ CatBoost 단일 모델은 LGBM보다 OOF AUC가 소폭 낮았지만, LGBM과 ble
 
 최종 모델은 OOF 기준으로 선택했으며, public score를 이용해 학습하거나 blend weight를 탐색하지 않았습니다.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
 
 ## 최종 제출 모델 요약
@@ -204,4 +203,4 @@ CatBoost 단일 모델은 LGBM보다 OOF AUC가 소폭 낮았지만, LGBM과 ble
 - segment별 전용 모델 또는 calibration을 적용하면 확률 예측 안정성 개선 가능
 - 시술 유형, 나이, 배아 상태 간 interaction feature를 추가로 탐색할 수 있음
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
