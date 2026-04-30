@@ -1,17 +1,30 @@
 # 데이터
 data/
 
+# 제출 산출물
+submission/*
+!submission/final_submission.csv
+
 # 가상환경
 .venv/
 venv/
 
 # Jupyter 체크포인트
 .ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
 
 # Python 캐시
 __pycache__/
 *.pyc
 
-# 불필요한 폴더
-experiments/
-models/
+# macOS 메타파일
+.DS_Store
+
+# notebooks 전체 제외
+notebooks/*
+
+# 제출용 노트북만 포함
+!notebooks/01_EDA.ipynb
+!notebooks/02_preprocessing_final.ipynb
+!notebooks/03_modeling_final.ipynb
+!notebooks/04_review.ipynb
