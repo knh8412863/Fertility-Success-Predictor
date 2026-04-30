@@ -20,6 +20,9 @@ __pycache__/
 # macOS 메타파일
 .DS_Store
 
+# 로컬 이미지 산출물
+eda.png
+
 # notebooks 전체 제외
 notebooks/*
 
